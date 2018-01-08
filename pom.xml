@@ -3,7 +3,7 @@
 
   <groupId>com.liveramp</groupId>
   <artifactId>pom-common</artifactId>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.4</version>
   <packaging>pom</packaging>
 
   <name>pom-common</name>
@@ -17,7 +17,7 @@
     <connection>scm:git:git@github.com:LiveRamp/pom-common.git</connection>
     <url>scm:git:git@github.com:LiveRamp/pom-common.git</url>
     <developerConnection>scm:git:git@github.com:LiveRamp/pom-common.git</developerConnection>
-    <tag>pom-common-1.2</tag>
+    <tag>pom-common-1.4</tag>
   </scm>
 
   <description>pom-common is the common POM for LiveRamp's open-source projects</description>
