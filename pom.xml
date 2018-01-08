@@ -3,7 +3,7 @@
 
   <groupId>com.liveramp</groupId>
   <artifactId>pom-common</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <packaging>pom</packaging>
 
   <name>pom-common</name>
@@ -17,7 +17,7 @@
     <connection>scm:git:git@github.com:LiveRamp/pom-common.git</connection>
     <url>scm:git:git@github.com:LiveRamp/pom-common.git</url>
     <developerConnection>scm:git:git@github.com:LiveRamp/pom-common.git</developerConnection>
-    <tag>pom-common-1.1</tag>
+    <tag>pom-common-1.2</tag>
   </scm>
 
   <distributionManagement>
@@ -25,10 +25,6 @@
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
   </distributionManagement>
 
   <dependencies>
@@ -59,6 +55,18 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.4</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
       </plugin>
 
       <plugin>
