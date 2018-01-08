@@ -20,6 +20,15 @@
     <tag>pom-common-1.2</tag>
   </scm>
 
+  <description>pom-common is the common POM for LiveRamp's open-source projects</description>
+
+  <developers>
+    <developer>
+      <name>Ben Podgursky</name>
+      <email>bpodgursky@gmail.com</email>
+    </developer>
+  </developers>
+
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
