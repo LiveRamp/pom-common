@@ -12,8 +12,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!--Need to be set in settings.xml to deploy artifacts-->
-    <gpg.keyname>""</gpg.keyname>
-    <gpg.passphrase>""</gpg.passphrase>
+    <!--<gpg.keyname>""</gpg.keyname>-->
+    <!--<gpg.passphrase>""</gpg.passphrase>-->
   </properties>
 
   <scm>
@@ -178,24 +178,24 @@
         <version>2.5.1</version>
       </plugin>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.6</version>
-        <executions>
-          <execution>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-            <configuration>
-              <keyname>${gpg.keyname}</keyname>
-              <passphrase>${gpg.passphrase}</passphrase>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+      <!--<plugin>-->
+        <!--<groupId>org.apache.maven.plugins</groupId>-->
+        <!--<artifactId>maven-gpg-plugin</artifactId>-->
+        <!--<version>1.6</version>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>sign-artifacts</id>-->
+            <!--<phase>verify</phase>-->
+            <!--<goals>-->
+              <!--<goal>sign</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<keyname>${gpg.keyname}</keyname>-->
+              <!--<passphrase>${gpg.passphrase}</passphrase>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+        <!--</executions>-->
+      <!--</plugin>-->
 
       <!--TODO replace this plugin with something in central-->
       <!--<plugin>-->
