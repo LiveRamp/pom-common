@@ -3,7 +3,7 @@
 
   <groupId>com.liveramp</groupId>
   <artifactId>pom-common</artifactId>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>pom-common</name>
@@ -41,10 +41,45 @@
     </license>
   </licenses>
 
-  <distributionManagement>
+  <repositories>
     <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>conjars.org</id>
+      <name>Conjars</name>
+      <url>http://conjars.org/repo</url>
+    </repository>
+    <repository>
+      <id>cdh.repo</id>
+      <name>Cloudera</name>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+    </repository>
+    <repository>
+      <id>liveramp-repositories</id>
+      <name>Liveramp Repositories</name>
+      <url>http://repository.liveramp.com/artifactory/liveramp-repositories</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>sonatype-releases</id>
+      <url>http://oss.sonatype.org/content/repositories/releases</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>clojars.org</id>
+      <url>http://clojars.org/repo</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>repository.liveramp.com</id>
+      <name>repository.liveramp.com-snapshots</name>
+      <url>http://repository.liveramp.com/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+    <repository>
+      <id>repository.liveramp.com</id>
+      <name>repository.liveramp.com-releases</name>
+      <url>http://repository.liveramp.com/artifactory/libs-release-local</url>
     </repository>
   </distributionManagement>
 
