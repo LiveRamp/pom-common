@@ -17,7 +17,7 @@
     <connection>scm:git:git@github.com:LiveRamp/pom-common.git</connection>
     <url>scm:git:git@github.com:LiveRamp/pom-common.git</url>
     <developerConnection>scm:git:git@github.com:LiveRamp/pom-common.git</developerConnection>
-    <tag>pom-common-1.2</tag>
+    <tag>pom-common-1.1</tag>
   </scm>
 
   <description>pom-common is the common POM for LiveRamp's open-source projects</description>
@@ -49,8 +49,13 @@
       <name>Cloudera</name>
       <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
     </repository>
+    <!--
+      According to
+      https://stackoverflow.com/questions/5325407/how-to-set-order-of-repositories-in-maven-settings-xml,
+      drop a repository id's lexical ordering to drop its priority accordingly.
+    -->
     <repository>
-      <id>liveramp-repositories</id>
+      <id>ZZZ_DEPRECATED_liveramp-repositories</id>
       <name>Liveramp Repositories</name>
       <url>http://repository.liveramp.com/artifactory/liveramp-repositories</url>
     </repository>
