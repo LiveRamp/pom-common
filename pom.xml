@@ -49,16 +49,6 @@
       <name>Cloudera</name>
       <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
     </repository>
-    <!--
-      According to
-      https://stackoverflow.com/questions/5325407/how-to-set-order-of-repositories-in-maven-settings-xml,
-      drop a repository id's lexical ordering to drop its priority accordingly.
-    -->
-    <repository>
-      <id>ZZZ_DEPRECATED_liveramp-repositories</id>
-      <name>Liveramp Repositories</name>
-      <url>http://repository.liveramp.com/artifactory/liveramp-repositories</url>
-    </repository>
   </repositories>
 
   <pluginRepositories>
